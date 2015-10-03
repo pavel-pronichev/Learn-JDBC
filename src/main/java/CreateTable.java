@@ -25,7 +25,7 @@ public class CreateTable {
 
             Statement statement = connection.createStatement();
 
-            String creatTable = "CREATE TABLE dbusers (id INT(11) NOT NULL AUTO_INCREMENT, user_name VARCHAR(45) NOT NULL, user_pwd VARCHAR(45) NOT NULL, create_date DATE NOT NULL, PRIMARY KEY( ID ))";
+            String creatTable = "CREATE TABLE user (id INT(11) NOT NULL AUTO_INCREMENT, user_name VARCHAR(45) NOT NULL, experience VARCHAR(45), age INT, PRIMARY KEY( ID ))";
 
             statement.execute(creatTable);
             System.out.println("Table DBUSER created");

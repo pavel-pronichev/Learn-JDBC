@@ -25,7 +25,7 @@ public class AddInTable {
             Statement statement = connection.createStatement();
             System.out.println(getCurrentDate());
 
-            String str = "INSERT INTO dbusers ( user_name, user_pwd, create_date) values ( 'Paveldfg', 'pavel1234sdfg', '" + getCurrentDate() +"')" ;
+            String str = "INSERT INTO dbusers ( user_name, user_pwd, create_date) values ( 'Paveldfg', 'pavel1234sdfg', CURRENT_TIMESTAMP)" ;
 
             statement.executeUpdate(str);
 
